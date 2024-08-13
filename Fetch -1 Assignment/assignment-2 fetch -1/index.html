@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetching and Displaying Users from Reqres API</title>
+    <style>
+      
+      #fetch-user {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      #fetch-user:hover {
+        background-color: #45a049;
+      }
+
+      
+      #box {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      
+      #box p {
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+
+      #box p:nth-child(3n + 1) {
+        background-color: #e7f3fe;
+      }
+
+      #box p:nth-child(3n + 2) {
+        background-color: #dff0d8;
+      }
+
+      #box p:nth-child(3n + 3) {
+        background-color: #f2dede;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fetching and Displaying Users from Reqres API</h1>
+    <button id="fetch-user">Fetch Users</button>
+
+    <div id="box"></div>
+  </body>
+  <script src="index.js"></script>
+</html>
